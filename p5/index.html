@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>atari</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Shadows+Into+Light">
+  <style>
+    canvas {background: #eee; display: block; margin: 0 auto;}
+    #sound{
+            width: 30px;
+            height : 30px;
+            cursor: pointer;
+            position: absolute;
+            top : 615px;
+            left : 450px;
+        }
+        #pause{
+          position: absolute;
+          width : 1000px;
+          height: 650px;
+          background: rgba(0,0,0,0.5);
+          display: none;
+          left: 440px;
+        }
+        #gameover{
+            position: absolute;
+            width : 1000px;
+            height: 650px;
+            background: rgba(0,0,0,0.5);
+            display: none;
+            left: 440px;
+        }
+        #youwin{
+            width: 380px;
+            position: absolute;
+            top : 100px;
+            left : 300px;
+            display: none;
+        }
+        #youlose{
+            width:400px;
+            position: absolute;
+            top: 100px;
+            left : 300px;
+            display: none;
+        }
+        #restart{
+            position: absolute;
+            top: 360px;
+            left : 400px;
+            cursor: pointer;
+            font-size: 1.25em;
+            color : #FFF;
+        }
+  </style>
+  <!-- <script src="../addons/p5.sound.js"></script> -->
+  
+</head>
+
+<body>
+  <div class="sound">
+    <img src="img/soundon.png" alt="" id="sound">
+</div>
+<div id="gameover">
+    <img src="img/youwin.png" alt="" id="youwin">
+    <img src="img/gameover.png" alt="" id="youlose">
+    <div id="restart">
+      <font face = "Shadows Into Light" size = "10px">
+        Play Again!
+      </font>
+    </div>
+  </div>
+<div id = "pause">
+</div>
+<audio src="sounds/bgmlofi.mp3">
+</audio>
+  <canvas id="gameCanvas" width="1000" height="650"></canvas>
+  <script src="sketch.js"></script>
+  <main>
+  </main>
+</body>
+
+</html>
